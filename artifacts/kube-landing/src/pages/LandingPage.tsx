@@ -159,6 +159,42 @@ export default function LandingPage() {
           </FadeIn>
         </section>
 
+        {/* Excerpt + Course Image */}
+        <section className="relative overflow-hidden bg-surface-lowest" aria-label="Course overview">
+          {/* Full-width image */}
+          <div className="relative w-full h-[420px] md:h-[560px] overflow-hidden">
+            <img
+              src="/course-hero.jpg"
+              alt="Software engineer working with agentic coding tools at a terminal, Gold Coast cityscape in the background"
+              className="w-full h-full object-cover object-center"
+              loading="eager"
+            />
+            {/* Gradient overlays for text legibility */}
+            <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+
+            {/* Excerpt text overlaid on image */}
+            <div className="absolute inset-0 flex items-center">
+              <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
+                <FadeIn>
+                  <div className="max-w-xl space-y-6">
+                    <span className="font-mono text-[10px] font-bold text-terminal-green uppercase tracking-widest">// Course Overview</span>
+                    <blockquote className="font-display font-bold text-2xl md:text-3xl leading-snug text-white">
+                      "Coding agents ship code fast. Agentic engineers ship software that works — and stays understood."
+                    </blockquote>
+                    <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
+                      This five-week intensive at Surfers Paradise teaches the discipline that separates the two: durable specifications, bounded delivery loops, and systematic verification. You'll build one real application twice, then defend it under an unannounced change. By the end, you'll know not just how to use agents — but how to remain the engineer in charge.
+                    </p>
+                    <div className="flex items-center gap-4 pt-2">
+                      <span className="font-mono text-xs text-electric-blue">5 WEEKS · SURFERS PARADISE · FROM $1,490 AUD</span>
+                    </div>
+                  </div>
+                </FadeIn>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Curriculum Section */}
         <section className="py-32 px-6 md:px-12 bg-surface-lowest technical-grid-bg" id="curriculum">
           <div className="max-w-7xl mx-auto">

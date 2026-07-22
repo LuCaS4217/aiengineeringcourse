@@ -360,7 +360,7 @@ export default function LandingPage() {
                   <div className="p-8 sm:p-10 flex-1 space-y-5">
                     <div>
                       <h3 className="font-display font-bold text-2xl mb-2">Pedro Giesel</h3>
-                      <p className="font-mono text-xs font-bold text-electric-blue uppercase">Support Trainer · AI Trainer, TAFE QLD</p>
+                      <p className="font-mono text-xs font-bold text-electric-blue uppercase">Support Trainer · Diploma of AI Trainer &amp; Assessor</p>
                     </div>
                     <p className="text-foreground/70 leading-relaxed">
                       Diploma of AI trainer at TAFE Queensland with 20+ years in IT as Director of IT and Solutions Architect. Co-founder of AImebee. Provides 1-on-1 support in every class and lab so every student keeps pace and every tool works.

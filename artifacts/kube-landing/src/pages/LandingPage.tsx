@@ -433,7 +433,7 @@ export default function LandingPage() {
             <img src={logoWhite} alt="Kube College" className="h-10 w-auto" />
             <div className="font-mono text-sm font-bold text-foreground">Agentic AI Course</div>
             <p className="text-foreground/60 max-w-sm leading-relaxed">
-              Professional training for engineers building software with coding agents — durable specifications, bounded loops, and verification without losing system comprehension. Surfers Paradise, Gold Coast QLD.
+              Professional training for engineers building software with coding agents, durable specifications, bounded loops, and verification without losing system comprehension. Surfers Paradise, Gold Coast QLD.
             </p>
           </div>
           <div className="flex flex-col md:items-end justify-between">

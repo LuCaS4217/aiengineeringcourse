@@ -4,7 +4,6 @@ import { Terminal, Network, Cloud, CheckCircle, Share2, Code, GraduationCap, Shi
 
 import logoWhite from '@assets/kube/logo-white.svg';
 import iconWhite from '@assets/kube/icon-white.png';
-import leoPhoto from '@assets/1689211906305_1784695213245.jfif';
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode, delay?: number }) => (
   <motion.div
@@ -336,8 +335,8 @@ export default function LandingPage() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 
                 <StaggerItem className="group flex flex-col sm:flex-row bg-surface border border-outline-variant/30 hover:border-electric-blue transition-all duration-300">
-                  <div className="w-full sm:w-48 h-64 sm:h-auto bg-surface-high border-b sm:border-b-0 sm:border-r border-outline-variant/30 shrink-0 overflow-hidden">
-                    <img src={leoPhoto} alt="Leonardo Pinheiro" className="w-full h-full object-cover object-center" />
+                  <div className="w-full sm:w-48 h-64 sm:h-auto bg-surface-high flex items-center justify-center border-b sm:border-b-0 sm:border-r border-outline-variant/30 shrink-0">
+                    <span className="font-display font-bold text-5xl text-electric-blue/50 group-hover:text-electric-blue transition-colors">LP</span>
                   </div>
                   <div className="p-8 sm:p-10 flex-1 space-y-5">
                     <div>
@@ -369,8 +368,10 @@ export default function LandingPage() {
                       Diploma of AI trainer at TAFE Queensland with 20+ years in IT as Director of IT and Solutions Architect. Co-founder of AImebee. Provides 1-on-1 support in every class and lab so every student keeps pace and every tool works.
                     </p>
                     <div className="flex gap-5 pt-4">
-                      <GraduationCap className="w-5 h-5 text-outline-variant group-hover:text-electric-blue transition-colors cursor-pointer" />
-                      <ShieldCheck className="w-5 h-5 text-outline-variant group-hover:text-electric-blue transition-colors cursor-pointer" />
+                      <a href="https://www.linkedin.com/in/pedrogiesel/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <Share2 className="w-5 h-5 text-outline-variant group-hover:text-electric-blue transition-colors" />
+                      </a>
+                      <GraduationCap className="w-5 h-5 text-outline-variant group-hover:text-electric-blue transition-colors" />
                     </div>
                   </div>
                 </StaggerItem>

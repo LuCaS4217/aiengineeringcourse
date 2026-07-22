@@ -166,7 +166,7 @@ export default function LandingPage() {
               <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-l-4 border-electric-blue pl-6">
                 <div className="space-y-3">
                   <span className="font-mono text-xs font-bold text-electric-blue uppercase tracking-widest">The Blueprint</span>
-                  <h2 className="font-display font-bold text-4xl md:text-5xl">Module 01: Agentic Engineering</h2>
+                  <h2 className="font-display font-bold text-4xl md:text-5xl">Agentic Engineering</h2>
                 </div>
                 <div className="font-mono text-sm text-outline-variant mt-6 md:mt-0">
                   // EVERY_THURSDAY = LAB_DAY
@@ -227,7 +227,7 @@ export default function LandingPage() {
                 <StaggerItem className="p-8 hover:bg-deep-charcoal transition-all group flex flex-col">
                   <div className="font-mono text-sm font-bold text-electric-blue mb-6">WEEK 05</div>
                   <h3 className="font-display font-bold text-xl mb-4 leading-tight group-hover:text-electric-blue transition-colors">Agents as Reference Architecture</h3>
-                  <p className="text-foreground/60 text-sm leading-relaxed flex-1">Apply the same unseen change to both builds, defend the architecture without agent assistance, and bridge to Module 02.</p>
+                  <p className="text-foreground/60 text-sm leading-relaxed flex-1">Apply the same unseen change to both builds, defend the architecture without agent assistance.</p>
                   <div className="mt-8 flex gap-2">
                     <span className="w-2 h-2 bg-electric-blue block"></span>
                     <span className="w-2 h-2 bg-electric-blue block"></span>
@@ -361,7 +361,7 @@ export default function LandingPage() {
                       <p className="font-mono text-xs font-bold text-electric-blue uppercase">Support Trainer · Diploma of AI Trainer &amp; Assessor</p>
                     </div>
                     <p className="text-foreground/70 leading-relaxed">
-                      Diploma of AI trainer at TAFE Queensland with 20+ years in IT as Director of IT and Solutions Architect. Co-founder of AImebee. Provides 1-on-1 support in every class and lab so every student keeps pace and every tool works.
+                      Diploma of AI Trainer and Assessor with 20+ years in IT as Director of IT and Solutions Architect. Co-founder of AImebee. Provides 1-on-1 support in every class and lab so every student keeps pace and every tool works.
                     </p>
                     <div className="flex gap-5 pt-4">
                       <a href="https://www.linkedin.com/in/pedrogiesel/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

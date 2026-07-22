@@ -354,9 +354,7 @@ export default function LandingPage() {
                 </StaggerItem>
 
                 <StaggerItem className="group flex flex-col sm:flex-row bg-surface border border-outline-variant/30 hover:border-electric-blue transition-all duration-300">
-                  <div className="w-full sm:w-48 h-64 sm:h-auto bg-surface-high flex items-center justify-center border-b sm:border-b-0 sm:border-r border-outline-variant/30 shrink-0">
-                    <span className="font-display font-bold text-5xl text-electric-blue/50 group-hover:text-electric-blue transition-colors">PG</span>
-                  </div>
+
                   <div className="p-8 sm:p-10 flex-1 space-y-5">
                     <div>
                       <h3 className="font-display font-bold text-2xl mb-2">Pedro Giesel</h3>

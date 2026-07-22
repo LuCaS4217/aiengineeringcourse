@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Kube College — AI Engineers Course"
+version = "1.0.0"
+id = "artifacts/kube-landing"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18436
+
+[services.development]
+run = "pnpm --filter @workspace/kube-landing run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/kube-landing", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/kube-landing/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18436"
+BASE_PATH = "/"

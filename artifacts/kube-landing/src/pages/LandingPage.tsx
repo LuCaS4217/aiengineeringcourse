@@ -304,7 +304,7 @@ export default function LandingPage() {
                   <span className="font-mono text-xs font-bold text-electric-blue uppercase tracking-widest">Ten Face to Face Classes</span>
                   <h2 className="font-display font-bold text-4xl md:text-5xl">Course Schedule</h2>
                 </div>
-                <div className="font-mono text-sm text-outline-variant mt-6 md:mt-0">
+                <div className="font-mono text-sm text-foreground/70 mt-6 md:mt-0">
                   // TUESDAYS_AND_THURSDAYS · 18:00–21:00
                 </div>
               </div>
@@ -362,7 +362,7 @@ export default function LandingPage() {
                   <span className="font-mono text-xs font-bold text-electric-blue uppercase tracking-widest">The Blueprint</span>
                   <h2 className="font-display font-bold text-4xl md:text-5xl">Agentic Engineering</h2>
                 </div>
-                <div className="font-mono text-sm text-outline-variant mt-6 md:mt-0">
+                <div className="font-mono text-sm text-foreground/70 mt-6 md:mt-0">
                   // EVERY_THURSDAY = LAB_DAY
                 </div>
               </div>

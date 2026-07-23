@@ -84,9 +84,9 @@ export default function LandingPage() {
       {/* Header */}
       <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background/90 backdrop-blur-md border-b border-outline-variant/30 py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-          <a href="#" className="flex items-center gap-3">
+          <a href="#top" className="flex items-center gap-3">
             <img src={logoWhite} alt="Kube College" className="h-8 md:h-9 w-auto" />
-            <span className="hidden sm:inline font-mono text-sm font-bold text-electric-blue uppercase tracking-widest border-l border-outline-variant/50 pl-3">AI Engineer</span>
+            <span className="hidden lg:inline font-mono text-sm font-bold text-electric-blue uppercase tracking-widest border-l border-outline-variant/50 pl-3">AI Engineer</span>
           </a>
           <nav className="hidden md:flex items-center gap-8">
             <a className="text-foreground/80 hover:text-electric-blue transition-colors duration-200" href="#schedule">Schedule</a>
@@ -101,7 +101,7 @@ export default function LandingPage() {
 
       <main>
         {/* ── Hero ── */}
-        <section className="relative min-h-[100dvh] flex flex-col items-center justify-center text-center px-6 md:px-12 overflow-hidden hero-gradient technical-grid-bg pt-20">
+        <section id="top" className="relative min-h-[100dvh] flex flex-col items-center justify-center text-center px-6 md:px-12 overflow-hidden hero-gradient technical-grid-bg pt-20">
           <FadeIn>
             <div className="z-10 max-w-4xl mx-auto space-y-8">
               <img src={iconWhite} alt="Kube College icon" className="h-14 w-auto mx-auto opacity-90" />
@@ -161,32 +161,32 @@ export default function LandingPage() {
         {/* ── Course Details Bar ── */}
         <section className="bg-surface-high border-y border-outline-variant/20 py-8 px-6 md:px-12">
           <FadeIn>
-            <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 md:divide-x divide-outline-variant/30">
-              <div className="flex flex-col items-center md:items-start md:pl-6 first:pl-0">
+            <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 lg:divide-x divide-outline-variant/30">
+              <div className="flex flex-col items-center md:items-start lg:pl-6 first:pl-0">
                 <span className="font-mono text-[10px] font-bold text-electric-blue mb-1 uppercase tracking-widest">Course</span>
                 <span className="font-mono text-sm text-foreground leading-snug">AI Engineer Certificate</span>
               </div>
-              <div className="flex flex-col items-center md:items-start md:pl-6">
+              <div className="flex flex-col items-center md:items-start lg:pl-6">
                 <span className="font-mono text-[10px] font-bold text-electric-blue mb-1 uppercase tracking-widest">Dates</span>
                 <span className="font-mono text-sm text-foreground leading-snug">1 Sept – 1 Oct 2026</span>
               </div>
-              <div className="flex flex-col items-center md:items-start md:pl-6">
+              <div className="flex flex-col items-center md:items-start lg:pl-6">
                 <span className="font-mono text-[10px] font-bold text-electric-blue mb-1 uppercase tracking-widest">Classes</span>
                 <span className="font-mono text-sm text-foreground leading-snug">10 face to face<br />Tue &amp; Thu 18–21h</span>
               </div>
-              <div className="flex flex-col items-center md:items-start md:pl-6">
+              <div className="flex flex-col items-center md:items-start lg:pl-6">
                 <span className="font-mono text-[10px] font-bold text-electric-blue mb-1 uppercase tracking-widest">Location</span>
                 <span className="font-mono text-sm text-foreground leading-snug">Kube College<br />Gold Coast</span>
               </div>
-              <div className="flex flex-col items-center md:items-start md:pl-6">
+              <div className="flex flex-col items-center md:items-start lg:pl-6">
                 <span className="font-mono text-[10px] font-bold text-electric-blue mb-1 uppercase tracking-widest">Capacity</span>
                 <span className="font-mono text-sm text-foreground leading-snug">Max 15 students</span>
               </div>
-              <div className="flex flex-col items-center md:items-start md:pl-6">
+              <div className="flex flex-col items-center md:items-start lg:pl-6">
                 <span className="font-mono text-[10px] font-bold text-electric-blue mb-1 uppercase tracking-widest">Standard Price</span>
                 <span className="font-mono text-sm text-foreground leading-snug">$1,490 AUD</span>
               </div>
-              <div className="flex flex-col items-center md:items-start md:pl-6">
+              <div className="flex flex-col items-center md:items-start lg:pl-6">
                 <span className="font-mono text-[10px] font-bold text-terminal-green mb-1 uppercase tracking-widest">Founding Offer</span>
                 <span className="font-mono text-sm text-terminal-green font-bold leading-snug">$745 — first 5 only</span>
               </div>

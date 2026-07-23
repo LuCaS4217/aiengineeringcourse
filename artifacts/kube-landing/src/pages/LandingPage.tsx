@@ -326,7 +326,7 @@ export default function LandingPage() {
                         </div>
                       ))}
                     </div>
-                    <div className="font-mono text-[10px] text-outline-variant uppercase tracking-widest">{dates}</div>
+                    <div className="font-mono text-xs text-foreground/70 uppercase tracking-widest">{dates}</div>
                   </StaggerItem>
                 ))}
               </div>

@@ -1,0 +1,369 @@
+Update the AI Engineering Course landing page with the following confirmed information.
+
+Remove all placeholder text, “to be confirmed” messages and requests for confirmation from the public website.
+
+COURSE CAPACITY
+
+The course has a maximum capacity of 15 students.
+
+Use the following wording prominently throughout the page:
+
+Maximum 15 students
+
+Small classes limited to 15 participants
+
+Limited places available to preserve the small class experience
+
+Explain that the smaller class size allows students to receive direct support, debugging assistance, architecture feedback and meaningful access to the trainer.
+
+COURSE DATES
+
+The course will run from 1 September 2026 to 1 October 2026.
+
+Classes will be delivered face to face on the following dates:
+
+Tuesday, 1 September 2026
+
+Thursday, 3 September 2026
+
+Tuesday, 8 September 2026
+
+Thursday, 10 September 2026
+
+Tuesday, 15 September 2026
+
+Thursday, 17 September 2026
+
+Tuesday, 22 September 2026
+
+Thursday, 24 September 2026
+
+Tuesday, 29 September 2026
+
+Thursday, 1 October 2026
+
+Present the schedule in a clean and easy to scan format.
+
+Group the dates into five weeks:
+
+Week 1
+
+1 and 3 September 2026
+
+Week 2
+
+8 and 10 September 2026
+
+Week 3
+
+15 and 17 September 2026
+
+Week 4
+
+22 and 24 September 2026
+
+Week 5
+
+29 September and 1 October 2026
+
+Use the class times already confirmed on the existing website.
+
+Do not change the existing class times unless instructed separately.
+
+COURSE FORMAT
+
+Update the course format information to show:
+
+Five week intensive program
+
+Ten face to face classes
+
+Two classes per week
+
+Small classes with a maximum of 15 students
+
+Guided AI Engineering labs
+
+Practical project development
+
+Public final presentation at AI Horizons
+
+FINAL PRESENTATION
+
+The final public presentation will take place on:
+
+Thursday, 8 October 2026
+
+Use the event name:
+
+AI Engineer Project Showcase at AI Horizons
+
+Add the following section:
+
+YOUR FINAL MILESTONE
+
+Present Your AI Project at AI Horizons
+
+The course will conclude with the AI Engineer Project Showcase at AI Horizons on Thursday, 8 October 2026.
+
+Students will present the AI solutions they developed during the course to members of the Gold Coast technology, startup and business community.
+
+Kube College will invite:
+
+Local companies
+
+Technology leaders
+
+Recruiters
+
+Startup founders
+
+Entrepreneurs
+
+Potential collaborators
+
+Members of the investment community
+
+AI professionals
+
+Members of the local business community
+
+Use this highlighted statement:
+
+You will not finish the course with only a certificate. You will finish with a working AI project, a public presentation and a stronger professional portfolio.
+
+Add:
+
+Date: Thursday, 8 October 2026
+
+Location: Kube College, Gold Coast
+
+Event: AI Engineer Project Showcase at AI Horizons
+
+Open to the public
+
+Do not claim that specific companies, recruiters, founders or investors have confirmed attendance unless their participation has been formally confirmed.
+
+AI HORIZONS SECTION
+
+Use the following wording:
+
+The AI Engineer Project Showcase will be presented as part of AI Horizons, Kube College’s community event series connecting AI professionals, developers, founders, business leaders, students and members of the local technology community.
+
+Students will have the opportunity to explain what they built, demonstrate how it works and discuss the engineering decisions behind their solution.
+
+COURSE PRICE
+
+The standard course price is:
+
+$1,490
+
+Display the price clearly in the hero section, course details section and final enrolment section.
+
+Add the launch offer:
+
+50% off for the first five students
+
+Discounted price:
+
+$745
+
+Use the following wording:
+
+FOUNDING COHORT OFFER
+
+The first five students to secure their place will receive 50% off the standard course price.
+
+Standard price: $1,490
+
+First five students: $745
+
+Limited to the first five completed enrolments.
+
+Where the existing discount code is required during checkout, retain the existing discount code and payment functionality.
+
+Do not create a new discount code.
+
+Do not suggest that submitting an enquiry secures the discount. Make it clear that the offer applies to the first five completed enrolments or confirmed payments.
+
+HERO SECTION
+
+Update the hero section to:
+
+Eyebrow:
+
+FACE TO FACE AI ENGINEERING COURSE
+
+Main heading:
+
+Build Real AI Systems.
+Become an AI Engineer.
+
+Supporting text:
+
+Move beyond prompts and tutorials. Learn how to design, build and deploy AI applications through ten face to face classes, guided engineering labs and real project work.
+
+Course information:
+
+1 September to 1 October 2026
+
+Face to face at Kube College on the Gold Coast
+
+Maximum 15 students
+
+Final public project showcase at AI Horizons on 8 October 2026
+
+Pricing callout:
+
+Course price: $1,490
+
+50% off for the first five students
+
+First five students pay $745
+
+Primary button:
+
+Secure Your Place
+
+Secondary button:
+
+View the Course Schedule
+
+Add a visual urgency label:
+
+Only five discounted places available
+
+COURSE DETAILS SECTION
+
+Present the following confirmed details:
+
+Course:
+
+AI Engineer Certificate
+
+Delivery:
+
+Face to face
+
+Location:
+
+Kube College, Gold Coast
+
+Duration:
+
+Five weeks
+
+Classes:
+
+Ten face to face sessions
+
+Class dates:
+
+1 September to 1 October 2026
+
+Final presentation:
+
+8 October 2026 at AI Horizons
+
+Class capacity:
+
+Maximum 15 students
+
+Standard price:
+
+$1,490
+
+Founding cohort offer:
+
+$745 for the first five students
+
+Curriculum:
+
+Use the curriculum technologies and course content already available on the existing website.
+
+Do not add unconfirmed technologies or remove existing confirmed curriculum content.
+
+FINAL CALL TO ACTION
+
+Update the final section to:
+
+STOP WATCHING AI TUTORIALS.
+START BUILDING AI SYSTEMS.
+
+Join a small group of no more than 15 technical professionals for five weeks of face to face classes, guided engineering labs and practical project development on the Gold Coast.
+
+Build a working AI solution and present it publicly at the AI Engineer Project Showcase during AI Horizons on Thursday, 8 October 2026.
+
+Course price: $1,490
+
+The first five students pay only $745.
+
+Primary button:
+
+Secure Your Place
+
+Secondary button:
+
+View the Full Curriculum
+
+Add:
+
+The 50% offer is limited to the first five completed enrolments.
+
+CONTENT ACCURACY
+
+Use 2026 on all dates.
+
+Ensure the dates appear consistently across the hero, schedule, course details, frequently asked questions and structured data.
+
+Update any old or conflicting dates currently visible on the page.
+
+Update any old or conflicting price information.
+
+Do not display an unconfirmed class capacity.
+
+The confirmed maximum class capacity is 15 students.
+
+Do not use the phrase “date to be announced”.
+
+The confirmed final presentation date is Thursday, 8 October 2026.
+
+Do not leave any placeholder text visible.
+
+Do not add invented employment outcomes, participating companies, sponsors, recruiters, investors, testimonials or partnerships.
+
+TECHNICAL CHECKS
+
+After making the changes:
+
+Confirm every enrolment button uses the existing correct payment or registration link.
+
+Confirm the 50% offer is correctly supported by the existing checkout process.
+
+Confirm the mobile sticky call to action displays the correct price and offer.
+
+Confirm the course structured data contains the correct dates, price and location.
+
+Confirm there are no conflicting dates or prices in hidden sections, metadata, frequently asked questions or mobile components.
+
+Confirm all navigation links and buttons work.
+
+Confirm the website remains responsive on desktop, tablet and mobile.
+
+Provide a final implementation summary listing:
+
+Files changed
+
+Sections updated
+
+Old information removed
+
+Final dates applied
+
+Final pricing applied
+
+Final class capacity applied
+
+Payment and enrolment links tested
+
+Do not publish any request for confirmation on the website.

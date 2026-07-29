@@ -56,7 +56,7 @@ const SCHEDULE = [
 
 export default function LandingPage() {
   useEffect(() => {
-    document.title = "AI Engineer Certificate | Kube College — Gold Coast";
+    document.title = "AI Engineer Certificate | Kube College, Gold Coast";
 
     const scriptId = 'tally-js';
     if (!document.getElementById(scriptId)) {
@@ -124,7 +124,7 @@ export default function LandingPage() {
                 <li className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-terminal-green shrink-0" /> 1 September to 1 October 2026</li>
                 <li className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-terminal-green shrink-0" /> Face to face at Kube College on the Gold Coast</li>
                 <li className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-terminal-green shrink-0" /> Maximum 15 students</li>
-                <li className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-terminal-green shrink-0" /> Final public project showcase at AI Horizons — 8 October 2026</li>
+                <li className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-terminal-green shrink-0" /> Final public project showcase at the biggest AI event, AI Horizons, with 100+ attendees expected, 8 October 2026</li>
               </ul>
 
               {/* Pricing callout */}
@@ -188,7 +188,7 @@ export default function LandingPage() {
               </div>
               <div className="flex flex-col items-center md:items-start lg:pl-6">
                 <span className="font-mono text-[10px] font-bold text-terminal-green mb-1 uppercase tracking-widest">Founding Offer</span>
-                <span className="font-mono text-sm text-terminal-green font-bold leading-snug">$745 — first 5 only</span>
+                <span className="font-mono text-sm text-terminal-green font-bold leading-snug">$745, first 5 only</span>
               </div>
             </div>
           </FadeIn>
@@ -212,13 +212,13 @@ export default function LandingPage() {
                   <div className="max-w-xl space-y-6">
                     <span className="font-mono text-[10px] font-bold text-terminal-green uppercase tracking-widest">// Course Overview</span>
                     <blockquote className="font-display font-bold text-2xl md:text-3xl leading-snug text-white">
-                      "You will not finish the course with only a certificate. You will finish with a working AI project, a public presentation and a stronger professional portfolio."
+                      You will not finish the course with only a certificate. You will finish with a working AI project, a public presentation and a stronger professional portfolio.
                     </blockquote>
                     <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
-                      Five weeks of face to face classes, guided engineering labs and practical project development on the Gold Coast — concluding with a public showcase at AI Horizons on 8 October 2026.
+                      Five weeks of face to face classes, guided engineering labs and practical project development on the Gold Coast, concluding with a public showcase at AI Horizons on 8 October 2026.
                     </p>
                     <div className="flex items-center gap-4 pt-2">
-                      <span className="font-mono text-xs text-electric-blue">10 CLASSES · MAX 15 STUDENTS · FROM $745</span>
+                      <span className="font-mono text-xs text-electric-blue">MAX 15 STUDENTS · FROM $745</span>
                     </div>
                   </div>
                 </FadeIn>
@@ -271,7 +271,7 @@ export default function LandingPage() {
                           'Five week intensive program',
                           'Ten face to face classes',
                           'Two classes per week',
-                          'Small classes — maximum 15 students',
+                          'Small classes, maximum 15 students',
                           'Guided AI Engineering labs',
                           'Practical project development',
                           'Public final presentation at AI Horizons',
@@ -367,7 +367,7 @@ export default function LandingPage() {
                 </div>
               </div>
               <p className="text-lg text-foreground/70 max-w-3xl mb-16 -mt-8 leading-relaxed">
-                You build one real application <span className="text-foreground font-bold">twice</span> — first as a prompt-driven prototype, then as a spec-driven, agent-delivered reimplementation. In Week 5, the same unannounced maintenance change reveals the difference in correctness, review effort, maintainability, and comprehension.
+                You build one real application <span className="text-foreground font-bold">twice</span>, first as a prompt-driven prototype, then as a spec-driven, agent-delivered reimplementation. In Week 5, the same unannounced maintenance change reveals the difference in correctness, review effort, maintainability, and comprehension.
               </p>
             </FadeIn>
 
@@ -492,11 +492,11 @@ export default function LandingPage() {
                   </li>
                   <li className="flex items-start gap-5">
                     <CheckCircle className="w-6 h-6 text-electric-blue shrink-0 mt-0.5" />
-                    <span className="text-lg">Git, tests &amp; delivery workflows — branches, PR review, terminal</span>
+                    <span className="text-lg">Git, tests &amp; delivery workflows, branches, PR review, terminal</span>
                   </li>
                   <li className="flex items-start gap-5">
                     <CheckCircle className="w-6 h-6 text-electric-blue shrink-0 mt-0.5" />
-                    <span className="text-lg">LLM basics — prompts, context windows, tool use</span>
+                    <span className="text-lg">LLM basics, prompts, context windows, tool use</span>
                   </li>
                   <li className="flex items-start gap-5">
                     <CheckCircle className="w-6 h-6 text-electric-blue shrink-0 mt-0.5" />
@@ -535,7 +535,7 @@ export default function LandingPage() {
                       <p className="font-mono text-xs font-bold text-electric-blue uppercase">Lead Trainer · Senior ML Engineer, Microsoft</p>
                     </div>
                     <p className="text-foreground/70 leading-relaxed">
-                      Builds agentic Copilot features for Clipchamp and works on the LLM evaluation platform used across Microsoft's product organisation. 10+ years taking AI from prototype to production — Harrison AI, BCGX, and startups worldwide.
+                      Builds agentic Copilot features for Clipchamp and works on the LLM evaluation platform used across Microsoft's product organisation. 10+ years taking AI from prototype to production, Harrison AI, BCGX, and startups worldwide.
                     </p>
                     <div className="flex gap-5 pt-4">
                       <a href="https://www.linkedin.com/in/lspinheiro/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -584,11 +584,11 @@ export default function LandingPage() {
                   </div>
 
                   <p className="text-foreground/70 text-lg leading-relaxed">
-                    The course concludes with the <strong className="text-foreground">AI Engineer Project Showcase at AI Horizons</strong> on Thursday, 8 October 2026. Students will present the AI solutions they developed during the course to members of the Gold Coast technology, startup and business community.
+                    The course concludes with the <strong className="text-foreground">AI Engineer Project Showcase at AI Horizons</strong> on Thursday, 8 October 2026, the biggest AI event on the Gold Coast, with 100+ attendees expected. Students will present the AI solutions they developed during the course to members of the Gold Coast technology, startup and business community.
                   </p>
 
                   <blockquote className="border-l-4 border-terminal-green pl-6 font-display font-bold text-xl text-white leading-snug">
-                    "You will not finish the course with only a certificate. You will finish with a working AI project, a public presentation and a stronger professional portfolio."
+                    You will not finish the course with only a certificate. You will finish with a working AI project, a public presentation and a stronger professional portfolio.
                   </blockquote>
 
                   <p className="text-foreground/70 leading-relaxed">
@@ -687,7 +687,7 @@ export default function LandingPage() {
               <div className="text-center mb-10">
                 <h3 className="font-display font-bold text-2xl mb-4">Secure Your Place</h3>
                 <p className="text-foreground/70 leading-relaxed text-sm">
-                  First intake starts Tuesday 1 September 2026. Maximum 15 participants to ensure 1-on-1 lab support. The first five completed enrolments receive 50% off — standard price $1,490, founding cohort price $745.
+                  First intake starts Tuesday 1 September 2026. Maximum 15 participants to ensure 1-on-1 lab support. The first five completed enrolments receive 50% off, standard price $1,490, founding cohort price $745.
                 </p>
               </div>
 
@@ -701,7 +701,7 @@ export default function LandingPage() {
                   frameBorder="0"
                   marginHeight={0}
                   marginWidth={0}
-                  title="AI Engineer Certificate — Register Interest"
+                  title="AI Engineer Certificate, Register Interest"
                 />
               </div>
 

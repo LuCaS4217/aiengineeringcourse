@@ -56,7 +56,7 @@ const SCHEDULE = [
 
 export default function LandingPage() {
   useEffect(() => {
-    document.title = "AI Engineer Certificate | Kube College, Gold Coast";
+    document.title = "AI Engineer Course | Kube College, Gold Coast";
 
     const scriptId = 'tally-js';
     if (!document.getElementById(scriptId)) {
@@ -164,7 +164,7 @@ export default function LandingPage() {
             <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 lg:divide-x divide-outline-variant/30">
               <div className="flex flex-col items-center md:items-start lg:pl-6 first:pl-0">
                 <span className="font-mono text-[10px] font-bold text-electric-blue mb-1 uppercase tracking-widest">Course</span>
-                <span className="font-mono text-sm text-foreground leading-snug">AI Engineer Certificate</span>
+                <span className="font-mono text-sm text-foreground leading-snug">AI Engineer Course</span>
               </div>
               <div className="flex flex-col items-center md:items-start lg:pl-6">
                 <span className="font-mono text-[10px] font-bold text-electric-blue mb-1 uppercase tracking-widest">Dates</span>
@@ -488,7 +488,7 @@ export default function LandingPage() {
                 <ul className="space-y-8">
                   <li className="flex items-start gap-5">
                     <CheckCircle className="w-6 h-6 text-electric-blue shrink-0 mt-0.5" />
-                    <span className="text-lg">Proficiency in Python or TypeScript (or similar)</span>
+                    <span className="text-lg">Proficiency in Python, TypeScript or any other similar programming language</span>
                   </li>
                   <li className="flex items-start gap-5">
                     <CheckCircle className="w-6 h-6 text-electric-blue shrink-0 mt-0.5" />
@@ -701,7 +701,7 @@ export default function LandingPage() {
                   frameBorder="0"
                   marginHeight={0}
                   marginWidth={0}
-                  title="AI Engineer Certificate, Register Interest"
+                  title="AI Engineer Course, Register Interest"
                 />
               </div>
 
@@ -731,7 +731,7 @@ export default function LandingPage() {
         <div className="w-full py-16 px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto">
           <div className="space-y-6">
             <img src={logoWhite} alt="Kube College" className="h-10 w-auto" loading="lazy" />
-            <div className="font-mono text-sm font-bold text-foreground">AI Engineer Certificate</div>
+            <div className="font-mono text-sm font-bold text-foreground">AI Engineer Course</div>
             <p className="text-foreground/60 max-w-sm leading-relaxed">
               Face to face AI engineering training on the Gold Coast. Ten classes, maximum 15 students, real project work and a public final presentation at AI Horizons. 1 September – 1 October 2026.
             </p>

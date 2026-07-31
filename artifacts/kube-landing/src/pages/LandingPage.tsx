@@ -4,7 +4,7 @@ import { Terminal, Network, Cloud, CheckCircle, Share2, Code, GraduationCap, Shi
 
 import logoWhite from '@assets/kube/logo-white.svg';
 import iconWhite from '@assets/kube/icon-white.png';
-import leoPhoto from '@assets/leo-santos_1785467853240.jpeg';
+import leoPhoto from '@assets/e010439d-abb1-411e-a90a-55ff3ae99c06_1785468147585.png';
 import pedroPhoto from '@assets/pedro-photo_1785467880503.png';
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode, delay?: number }) => (

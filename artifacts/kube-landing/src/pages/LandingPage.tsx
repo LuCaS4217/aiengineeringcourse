@@ -4,6 +4,8 @@ import { Terminal, Network, Cloud, CheckCircle, Share2, Code, GraduationCap, Shi
 
 import logoWhite from '@assets/kube/logo-white.svg';
 import iconWhite from '@assets/kube/icon-white.png';
+import leoPhoto from '@assets/leo-santos_1785467853240.jpeg';
+import pedroPhoto from '@assets/pedro-photo_1785467880503.png';
 
 const FadeIn = ({ children, delay = 0 }: { children: React.ReactNode, delay?: number }) => (
   <motion.div
@@ -529,6 +531,14 @@ export default function LandingPage() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
                 <StaggerItem className="group flex flex-col sm:flex-row bg-surface-lowest border border-outline-variant/30 hover:border-electric-blue transition-all duration-300">
+                  <div className="sm:w-56 shrink-0 overflow-hidden">
+                    <img
+                      src={leoPhoto}
+                      alt="Leonardo Pinheiro, Lead Trainer"
+                      loading="lazy"
+                      className="w-full h-64 sm:h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500"
+                    />
+                  </div>
                   <div className="p-8 sm:p-10 flex-1 space-y-5">
                     <div>
                       <h3 className="font-display font-bold text-2xl mb-2">Leonardo Pinheiro</h3>
@@ -547,6 +557,14 @@ export default function LandingPage() {
                 </StaggerItem>
 
                 <StaggerItem className="group flex flex-col sm:flex-row bg-surface-lowest border border-outline-variant/30 hover:border-electric-blue transition-all duration-300">
+                  <div className="sm:w-56 shrink-0 overflow-hidden">
+                    <img
+                      src={pedroPhoto}
+                      alt="Pedro Giesel, Support Trainer"
+                      loading="lazy"
+                      className="w-full h-64 sm:h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500"
+                    />
+                  </div>
                   <div className="p-8 sm:p-10 flex-1 space-y-5">
                     <div>
                       <h3 className="font-display font-bold text-2xl mb-2">Pedro Giesel</h3>

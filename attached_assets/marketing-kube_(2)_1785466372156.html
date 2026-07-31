@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agentic Engineering Course | Kube College — From Vibe Coding to Verifiable Delivery</title>
+<meta name="description" content="Five-week Agentic Engineering course at Kube College, Surfers Paradise. Learn coding-agent anatomy, spec-driven development, bounded delivery loops, and systematic verification. Starts 1 September 2026."/>
+<meta property="og:title" content="From Vibe Coding to Agentic Engineering — Kube College"/>
+<meta property="og:description" content="Build software with coding agents using durable specifications, bounded delivery loops, and systematic verification. 5 weeks · Surfers Paradise · Starts 1 Sept 2026."/>
+<meta property="og:image" content="https://kubecollege.edu.au/wp-content/uploads/2026/07/Kube-College-Gradient-scaled.png"/>
+<link rel="icon" type="image/svg+xml" href="https://kubecollege.edu.au/wp-content/uploads/2025/06/kube-college-icon.svg"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Hanken+Grotesk:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Config Execution -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#c2c6d6",
+                    "surface-tint": "#adc6ff",
+                    "surface": "#0a0c12",
+                    "secondary-fixed-dim": "#b3c6f8",
+                    "primary": "#448AFF",
+                    "tertiary": "#00FF41",
+                    "secondary-fixed": "#d9e2ff",
+                    "electric-blue": "#448AFF",
+                    "on-primary-container": "#00285d",
+                    "background": "#0a0c12",
+                    "on-tertiary": "#003907",
+                    "on-error": "#690005",
+                    "surface-variant": "#1c2230",
+                    "inverse-on-surface": "#303030",
+                    "on-surface": "#e5e2e1",
+                    "on-primary-fixed": "#001a42",
+                    "on-secondary-fixed": "#011a42",
+                    "surface-container-lowest": "#05070a",
+                    "surface-container-high": "#151b29",
+                    "terminal-green": "#00FF41",
+                    "on-tertiary-container": "#003205",
+                    "on-primary-fixed-variant": "#004495",
+                    "deep-charcoal": "#0d121f",
+                    "on-background": "#e5e2e1",
+                    "surface-bright": "#232d42",
+                    "surface-container": "#0f1521",
+                    "error-container": "#93000a",
+                    "error": "#ffb4ab",
+                    "tertiary-container": "#00a827",
+                    "slate-gray": "#4A5568",
+                    "on-secondary-container": "#a5b8e9",
+                    "on-tertiary-fixed": "#002203",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-highest": "#1c2230",
+                    "primary-fixed-dim": "#adc6ff",
+                    "on-tertiary-fixed-variant": "#00530e",
+                    "secondary": "#b3c6f8",
+                    "inverse-primary": "#005ac2",
+                    "outline-variant": "#2d3748",
+                    "outline": "#4a5568",
+                    "tertiary-fixed": "#72ff70",
+                    "primary-fixed": "#d8e2ff",
+                    "tertiary-fixed-dim": "#00e639",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#1a253d",
+                    "primary-container": "#1e3a8a",
+                    "surface-dim": "#0a0c12",
+                    "inverse-surface": "#e5e2e1",
+                    "on-secondary": "#b3c6f8",
+                    "surface-container-low": "#0d121f",
+                    "on-secondary-fixed-variant": "#334670"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px",
+                    "max-width": "1280px",
+                    "base": "8px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Hanken Grotesk"],
+                    "code-sm": ["JetBrains Mono"],
+                    "headline-lg": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "technical-heading": ["JetBrains Mono"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "label-caps": ["JetBrains Mono"],
+                    "body-md": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "code-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "technical-heading": ["14px", {"lineHeight": "1.5", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .technical-grid-bg {
+            background-image:
+                linear-gradient(to right, rgba(68, 138, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(68, 138, 255, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 15px rgba(68, 138, 255, 0.3);
+            border-color: #448AFF;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(68, 138, 255, 0.15), transparent 60%),
+                        linear-gradient(180deg, #0a0c12 0%, #111827 100%);
+        }
+        .blue-gradient-bg {
+            background: linear-gradient(135deg, #0a0c12 0%, #1a253d 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-electric-blue selection:text-white font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 bg-background/90 backdrop-blur-md border-b border-outline-variant/30 opacity-100">
+<a href="#" class="flex items-center gap-3">
+<img src="https://kubecollege.edu.au/wp-content/uploads/2025/06/kube-college-logo-hor-white.svg" alt="Kube College" class="h-9 w-auto"/>
+<span class="hidden sm:inline font-technical-heading text-technical-heading font-bold text-electric-blue uppercase tracking-widest border-l border-outline-variant/50 pl-3">Agentic AI</span>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-electric-blue font-bold border-b-2 border-electric-blue pb-1 transition-colors duration-200" href="#curriculum">Curriculum</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors duration-200" href="#audience">Audience</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors duration-200" href="#trainers">Trainers</a>
+</nav>
+<a href="#register" class="bg-primary px-6 py-2 rounded-DEFAULT text-on-primary font-label-caps uppercase active:scale-95 duration-150 transition-all hover:brightness-110 inline-flex items-center">
+            Register Interest
+        </a>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex flex-col items-center justify-center text-center px-margin-mobile md:px-margin-desktop overflow-hidden hero-gradient">
+<div class="z-10 max-w-4xl mx-auto space-y-8">
+<img src="https://kubecollege.edu.au/wp-content/uploads/2026/07/Icon-White.png" alt="Kube College icon" class="h-14 w-auto mx-auto opacity-90"/>
+<div class="inline-block border border-electric-blue/30 bg-electric-blue/5 px-4 py-1 rounded-DEFAULT">
+<span class="font-label-caps text-electric-blue tracking-widest uppercase">FIRST INTAKE // SEPT 2026</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-background md:text-[64px] leading-none">
+                    From Vibe Coding to <br/>
+<span class="text-electric-blue">Agentic Engineering</span>
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Build software with coding agents without surrendering quality or understanding. Learn durable specifications, bounded delivery loops, and systematic verification. A Senior ML Engineer from Microsoft teaches it, with a hands-on lab every Thursday.
+                </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center pt-8">
+<a class="bg-terminal-green text-background px-10 py-4 font-label-caps text-lg transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,255,65,0.2)]" href="#register">
+                        REGISTER INTEREST
+                    </a>
+<a class="border border-outline px-10 py-4 font-label-caps text-lg transition-all hover:border-electric-blue hover:text-electric-blue active:scale-95" href="#curriculum">
+                        VIEW CURRICULUM
+                    </a>
+</div>
+<p class="font-code-sm text-outline-variant">// Enrolment applications opening soon · Limited seats</p>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</div>
+</section>
+<!-- Key Details Bar -->
+<section class="bg-surface-container-high border-y border-outline-variant/20 py-8 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-max-width mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 md:divide-x divide-outline-variant/30">
+<div class="flex flex-col items-center md:items-start md:pl-8 first:pl-0">
+<span class="font-label-caps text-electric-blue mb-1 uppercase">First Class</span>
+<span class="font-technical-heading text-xl text-on-surface">Tue 1 Sept 2026</span>
+</div>
+<div class="flex flex-col items-center md:items-start md:pl-8">
+<span class="font-label-caps text-electric-blue mb-1 uppercase">Duration</span>
+<span class="font-technical-heading text-xl text-on-surface">5 Weeks</span>
+</div>
+<div class="flex flex-col items-center md:items-start md:pl-8">
+<span class="font-label-caps text-electric-blue mb-1 uppercase">Schedule</span>
+<span class="font-technical-heading text-xl text-on-surface">Tue/Thu 18–21h</span>
+</div>
+<div class="flex flex-col items-center md:items-start md:pl-8">
+<span class="font-label-caps text-electric-blue mb-1 uppercase">Location</span>
+<span class="font-technical-heading text-xl text-on-surface">Surfers Paradise</span>
+</div>
+<div class="flex flex-col items-center md:items-start md:pl-8">
+<span class="font-label-caps text-electric-blue mb-1 uppercase">Tuition Fee</span>
+<span class="font-technical-heading text-xl text-on-surface">$1,490 AUD</span>
+</div>
+</div>
+</section>
+<!-- Curriculum Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest technical-grid-bg" id="curriculum">
+<div class="max-w-max-width mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 border-l-4 border-electric-blue pl-6">
+<div class="space-y-2">
+<span class="font-label-caps text-electric-blue uppercase tracking-widest">The Blueprint</span>
+<h2 class="font-headline-lg text-headline-lg">Module 01: Agentic Engineering</h2>
+</div>
+<div class="font-code-sm text-outline-variant mt-4 md:mt-0">
+                        // EVERY_THURSDAY = LAB_DAY
+                    </div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-12 -mt-8">
+                You build one real application <span class="text-on-surface font-bold">twice</span>: first as a prompt-driven prototype, then as a spec-driven, agent-delivered reimplementation. In Week 5 you apply the same unannounced maintenance change to both builds and compare correctness, review effort, maintainability, and comprehension.
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-0 border border-outline-variant/30">
+<!-- Week 1 -->
+<div class="p-8 border-b md:border-b-0 md:border-r border-outline-variant/30 hover:bg-deep-charcoal transition-all group">
+<div class="font-technical-heading text-electric-blue mb-4">WEEK 01</div>
+<h3 class="font-headline-md text-headline-md mb-4 leading-tight group-hover:text-primary transition-colors">From Vibe Coding to Agentic Engineering</h3>
+<p class="text-on-surface-variant font-body-md text-sm">Build a prompt-driven prototype, then audit the skipped lifecycle phases, production risks, and resulting comprehension debt.</p>
+<div class="mt-8 flex gap-2">
+<span class="w-2 h-2 bg-electric-blue block"></span>
+<span class="w-2 h-2 bg-outline-variant block"></span>
+<span class="w-2 h-2 bg-outline-variant block"></span>
+</div>
+</div>
+<!-- Week 2 -->
+<div class="p-8 border-b md:border-b-0 md:border-r border-outline-variant/30 hover:bg-deep-charcoal transition-all group">
+<div class="font-technical-heading text-electric-blue mb-4">WEEK 02</div>
+<h3 class="font-headline-md text-headline-md mb-4 leading-tight group-hover:text-primary transition-colors">Anatomy of a Coding Agent</h3>
+<p class="text-on-surface-variant font-body-md text-sm">Trace the model-plus-harness system: repository context, tools, permissions, memory, and the gather → act → verify loop.</p>
+<div class="mt-8 flex gap-2">
+<span class="w-2 h-2 bg-electric-blue block"></span>
+<span class="w-2 h-2 bg-electric-blue block"></span>
+<span class="w-2 h-2 bg-outline-variant block"></span>
+</div>
+</div>
+<!-- Week 3 -->
+<div class="p-8 border-b md:border-b-0 md:border-r border-outline-variant/30 hover:bg-deep-charcoal transition-all group">
+<div class="font-technical-heading text-electric-blue mb-4">WEEK 03</div>
+<h3 class="font-headline-md text-headline-md mb-4 leading-tight group-hover:text-primary transition-colors">Spec-Driven Development</h3>
+<p class="text-on-surface-variant font-body-md text-sm">Turn customer interviews into durable, versioned specifications with explicit constraints, acceptance criteria, and verification.</p>
+<div class="mt-8 flex gap-2">
+<span class="w-2 h-2 bg-electric-blue block"></span>
+<span class="w-2 h-2 bg-electric-blue block"></span>
+<span class="w-2 h-2 bg-electric-blue block"></span>
+</div>
+</div>
+<!-- Week 4 -->
+<div class="p-8 border-b md:border-b-0 md:border-r border-outline-variant/30 hover:bg-deep-charcoal transition-all group">
+<div class="font-technical-heading text-electric-blue mb-4">WEEK 04</div>
+<h3 class="font-headline-md text-headline-md mb-4 leading-tight group-hover:text-primary transition-colors">Loop Engineering</h3>
+<p class="text-on-surface-variant font-body-md text-sm">Design bounded plan → execute → verify loops with persistent state, separate implementer and verifier roles, fault recovery, and human gates.</p>
+<div class="mt-8 flex gap-2">
+<span class="w-2 h-2 bg-electric-blue block"></span>
+<span class="w-2 h-2 bg-electric-blue block"></span>
+<span class="w-2 h-2 bg-electric-blue block"></span>
+</div>
+</div>
+<!-- Week 5 -->
+<div class="p-8 hover:bg-deep-charcoal transition-all group">
+<div class="font-technical-heading text-electric-blue mb-4">WEEK 05</div>
+<h3 class="font-headline-md text-headline-md mb-4 leading-tight group-hover:text-primary transition-colors">Coding Agents as the Reference Architecture</h3>
+<p class="text-on-surface-variant font-body-md text-sm">Apply the same unseen change to both builds, defend the architecture without agent assistance, and bridge to Module 02.</p>
+<div class="mt-8 flex gap-2">
+<span class="w-2 h-2 bg-electric-blue block"></span>
+<span class="w-2 h-2 bg-electric-blue block"></span>
+<span class="w-2 h-2 bg-electric-blue block"></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Audience & Prerequisites -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface" id="audience">
+<div class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="space-y-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-6">Who it's for</h2>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<div class="bg-surface-container-high p-3 border border-outline-variant">
+<span class="material-symbols-outlined text-electric-blue">terminal</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-lg mb-1">Software Engineers</h4>
+<p class="text-on-surface-variant">Engineers moving from prompt-driven code generation to verifiable delivery with coding agents.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="bg-surface-container-high p-3 border border-outline-variant">
+<span class="material-symbols-outlined text-electric-blue">architecture</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-lg mb-1">Tech Leads &amp; Architects</h4>
+<p class="text-on-surface-variant">Leads responsible for architecture, review, quality gates, and the safe adoption of coding agents.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="bg-surface-container-high p-3 border border-outline-variant">
+<span class="material-symbols-outlined text-electric-blue">settings_system_daydream</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-lg mb-1">Cloud, Data &amp; Platform Engineers</h4>
+<p class="text-on-surface-variant">Engineers who already work with code and want to adopt repository-capable agents safely.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-deep-charcoal border border-outline-variant/50 p-10 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 font-code-sm text-outline-variant opacity-20">PREREQ_001</div>
+<h2 class="font-headline-lg text-headline-lg mb-8">Prerequisites</h2>
+<ul class="space-y-6">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-electric-blue">check_circle</span>
+<span class="font-body-lg">Proficiency in Python or TypeScript (or similar)</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-electric-blue">check_circle</span>
+<span class="font-body-lg">Git, tests &amp; delivery workflows: branches, PR review, terminal</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-electric-blue">check_circle</span>
+<span class="font-body-lg">LLM basics: prompts, context windows, tool use</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-electric-blue">check_circle</span>
+<span class="font-body-lg">Access to a repository-capable coding agent (e.g. Claude Code, Codex, Cursor Agent)</span>
+</li>
+</ul>
+<div class="mt-12 pt-12 border-t border-outline-variant/30">
+<p class="font-code-sm text-on-surface-variant">
+                            Note: This is an intensive engineering course. We do not cover basic AI concepts.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trainer Profiles -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-y border-outline-variant/10" id="trainers">
+<div class="max-w-max-width mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-caps text-electric-blue uppercase tracking-widest block mb-2">Who's Teaching</span>
+<h2 class="font-headline-lg text-headline-lg">Meet Your Trainers</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Leonardo Card -->
+<div class="group flex flex-col md:flex-row bg-surface border border-outline-variant/30 hover:border-electric-blue transition-all duration-300">
+<div class="w-full md:w-48 h-64 md:h-auto bg-cover bg-center bg-surface-container-high flex items-center justify-center" data-alt="Leonardo Pinheiro professional portrait — replace with real photo">
+<span class="font-headline-lg text-headline-lg text-electric-blue">LP</span>
+</div>
+<div class="p-8 flex-1 space-y-4">
+<div>
+<h3 class="font-headline-md text-headline-md mb-1">Leonardo Pinheiro</h3>
+<p class="font-technical-heading text-electric-blue uppercase text-xs">Lead Trainer · Senior ML Engineer, Microsoft</p>
+</div>
+<p class="text-on-surface-variant font-body-md">
+                                Builds agentic Copilot features for Clipchamp and works on the LLM evaluation platform used across Microsoft's product organisation. 10+ years taking AI from prototype to production at Harrison AI, BCGX, and startups worldwide.
+                            </p>
+<div class="flex gap-4 pt-4">
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">share</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">code</span>
+</div>
+</div>
+</div>
+<!-- Pedro Card -->
+<div class="group flex flex-col md:flex-row bg-surface border border-outline-variant/30 hover:border-electric-blue transition-all duration-300">
+<div class="w-full md:w-48 h-64 md:h-auto bg-cover bg-center bg-surface-container-high flex items-center justify-center" data-alt="Pedro Giesel professional portrait — replace with real photo">
+<span class="font-headline-lg text-headline-lg text-electric-blue">PG</span>
+</div>
+<div class="p-8 flex-1 space-y-4">
+<div>
+<h3 class="font-headline-md text-headline-md mb-1">Pedro Giesel</h3>
+<p class="font-technical-heading text-electric-blue uppercase text-xs">Support Trainer · AI Trainer, TAFE QLD</p>
+</div>
+<p class="text-on-surface-variant font-body-md">
+                                Diploma of AI trainer at TAFE Queensland with 20+ years in IT as Director of IT and Solutions Architect (AWS, Azure, on-prem). Co-founder of AImebee. Provides 1-on-1 support in every class and lab so students keep pace and their tools work.
+                            </p>
+<div class="flex gap-4 pt-4">
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">school</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">verified_user</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Registration -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-background overflow-hidden relative blue-gradient-bg" id="register">
+<div class="max-w-xl mx-auto border border-outline-variant/30 bg-surface/80 backdrop-blur-xl p-8 md:p-12 relative shadow-2xl">
+<div class="absolute -top-1 -left-1 w-8 h-8 border-t-2 border-l-2 border-electric-blue"></div>
+<div class="absolute -bottom-1 -right-1 w-8 h-8 border-b-2 border-r-2 border-electric-blue"></div>
+<div class="text-center mb-10">
+<h2 class="font-headline-lg text-headline-lg mb-4">Register Interest</h2>
+<p class="text-on-surface-variant">First intake starts Tuesday 1 September 2026. Seats are limited to 15 so every participant gets 1-on-1 lab support. Enrolment applications open soon, and registrants get priority access.</p>
+</div>
+<!-- Tally embed -->
+<iframe data-tally-src="https://tally.so/embed/7Rz4aP?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="831" frameborder="0" marginheight="0" marginwidth="0" title="Agentic AI Course"></iframe>
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+<noscript>
+<a class="w-full block text-center bg-terminal-green text-background py-5 font-label-caps text-lg font-bold tracking-widest hover:brightness-110 transition-all" href="https://tally.so/r/7Rz4aP">REGISTER YOUR INTEREST</a>
+</noscript>
+<p class="text-center font-code-sm text-[10px] text-outline-variant uppercase pt-6">
+                        PRIORITY_ACCESS // ENROLMENT_APPLICATIONS_OPENING_SOON
+                    </p>
+</div>
+</section>
+<!-- Accreditation Section -->
+<section class="py-12 bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="max-w-max-width mx-auto px-margin-mobile text-center">
+<p class="font-code-sm text-outline-variant/60 tracking-wider">
+                    Kube College | Australian Skills Higher Academy Pty Ltd | RTO 46256 | CRICOS 04272K | www.kubecollege.edu.au
+                </p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="w-full py-12 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-max-width mx-auto">
+<div class="space-y-4">
+<img src="https://kubecollege.edu.au/wp-content/uploads/2025/06/kube-college-logo-hor-white.svg" alt="Kube College" class="h-10 w-auto"/>
+<div class="font-technical-heading text-technical-heading text-on-surface">Agentic AI Course</div>
+<p class="text-on-surface-variant font-body-md max-w-sm">
+                    Professional training for engineers building software with coding agents: durable specifications, bounded loops, and verification without losing system comprehension. Surfers Paradise, Gold Coast QLD.
+                </p>
+</div>
+<div class="flex flex-col md:items-end justify-between">
+<div class="flex gap-6 mb-8 md:mb-0">
+<a class="text-on-surface-variant hover:text-electric-blue underline decoration-electric-blue transition-all" href="https://www.kubecollege.edu.au">kubecollege.edu.au</a>
+<a class="text-on-surface-variant hover:text-electric-blue underline decoration-electric-blue transition-all" href="https://www.kubecollege.edu.au/privacy">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-electric-blue underline decoration-electric-blue transition-all" href="mailto:info@kubecollege.edu.au">Contact</a>
+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant pt-8">
+                    © 2026 Kube College. RTO 46256. Gold Coast, QLD.
+                </div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll reveal for sections
+        const observerOptions = {
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+            observer.observe(section);
+        });
+        // Interactive button micro-interaction
+        document.querySelectorAll('button, a').forEach(el => {
+            el.addEventListener('mousedown', () => el.style.transform = 'scale(0.95)');
+            el.addEventListener('mouseup', () => el.style.transform = '');
+            el.addEventListener('mouseleave', () => el.style.transform = '');
+        });
+    </script>
+</body></html>

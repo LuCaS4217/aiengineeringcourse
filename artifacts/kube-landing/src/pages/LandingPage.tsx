@@ -60,12 +60,25 @@ export default function LandingPage() {
   useEffect(() => {
     document.title = "AI Engineer Course | Kube College, Gold Coast";
 
-    const scriptId = 'tally-js';
-    if (!document.getElementById(scriptId)) {
+    const tallyWidgetUrl = 'https://tally.so/widgets/embed.js';
+    const tally = (window as Window & { Tally?: { loadEmbeds: () => void } }).Tally;
+    const loadTallyEmbeds = () => {
+      if (tally) {
+        tally.loadEmbeds();
+      } else {
+        document.querySelectorAll<HTMLIFrameElement>('iframe[data-tally-src]:not([src])').forEach((iframe) => {
+          iframe.src = iframe.dataset.tallySrc || '';
+        });
+      }
+    };
+
+    if (tally) {
+      loadTallyEmbeds();
+    } else if (document.querySelector(`script[src="${tallyWidgetUrl}"]`) === null) {
       const script = document.createElement('script');
-      script.id = scriptId;
-      script.src = 'https://tally.so/widgets/embed.js';
-      script.async = true;
+      script.src = tallyWidgetUrl;
+      script.onload = loadTallyEmbeds;
+      script.onerror = loadTallyEmbeds;
       document.body.appendChild(script);
     }
   }, []);
@@ -710,16 +723,16 @@ export default function LandingPage() {
               </div>
 
               {/* Tally embed */}
-              <div className="min-h-[831px] w-full">
+              <div className="min-h-[783px] w-full">
                 <iframe
-                  data-tally-src="https://tally.so/embed/7Rz4aP?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                  data-tally-src="https://tally.so/embed/7Rz4aP?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1"
                   loading="lazy"
                   width="100%"
-                  height="831"
+                  height="783"
                   frameBorder="0"
                   marginHeight={0}
                   marginWidth={0}
-                  title="AI Engineer Course, Register Interest"
+                  title="Agentic AI Course"
                 />
               </div>
 

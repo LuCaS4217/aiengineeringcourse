@@ -142,16 +142,16 @@ export default function LandingPage() {
                 <li className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-terminal-green shrink-0" /> Final public project showcase at the biggest AI event, AI Horizons, with 100+ attendees expected, 8 October 2026</li>
               </ul>
 
-              {/* Pricing callout */}
+              {/* Availability callout */}
               <div className="inline-flex flex-col sm:flex-row items-center gap-4 border border-terminal-green/40 bg-terminal-green/5 px-6 py-4 rounded">
                 <div className="text-left">
-                  <div className="font-mono text-xs font-bold text-terminal-green uppercase tracking-widest mb-1">Founding Cohort Offer</div>
-                  <div className="font-display font-bold text-2xl text-white">$745 <span className="text-foreground/50 line-through text-lg font-normal">$1,490</span></div>
-                  <div className="font-mono text-xs text-foreground/60 mt-0.5">First five students · Standard price $1,490</div>
+                  <div className="font-mono text-xs font-bold text-terminal-green uppercase tracking-widest mb-1">Course Price</div>
+                  <div className="font-display font-bold text-2xl text-white">$1,490 AUD</div>
+                  <div className="font-mono text-xs text-foreground/60 mt-0.5">Standard course enrolment</div>
                 </div>
                 <div className="hidden sm:block w-px h-12 bg-outline-variant/30" />
                 <div className="font-mono text-xs text-terminal-green font-bold uppercase tracking-wider text-center">
-                  Only 5 discounted<br />places available
+                  Only 3 seats<br />left!
                 </div>
               </div>
 
@@ -164,7 +164,7 @@ export default function LandingPage() {
                 </a>
               </div>
 
-              <p className="font-mono text-xs text-terminal-green/70 pt-2">// 50% off limited to the first five completed enrolments</p>
+              <p className="font-mono text-xs text-terminal-green/70 pt-2">// Only 3 seats left!</p>
             </div>
           </FadeIn>
 
@@ -202,8 +202,8 @@ export default function LandingPage() {
                 <span className="font-mono text-sm text-foreground leading-snug">$1,490 AUD</span>
               </div>
               <div className="flex flex-col items-center md:items-start lg:pl-6">
-                <span className="font-mono text-[10px] font-bold text-terminal-green mb-1 uppercase tracking-widest">Founding Offer</span>
-                <span className="font-mono text-sm text-terminal-green font-bold leading-snug">$745, first 5 only</span>
+                <span className="font-mono text-[10px] font-bold text-terminal-green mb-1 uppercase tracking-widest">Availability</span>
+                <span className="font-mono text-sm text-terminal-green font-bold leading-snug">Only 3 seats left!</span>
               </div>
             </div>
           </FadeIn>
@@ -233,7 +233,7 @@ export default function LandingPage() {
                       Five weeks of face to face classes, guided engineering labs and practical project development on the Gold Coast, concluding with a public showcase at AI Horizons on 8 October 2026.
                     </p>
                     <div className="flex items-center gap-4 pt-2">
-                      <span className="font-mono text-xs text-electric-blue">MAX 15 STUDENTS · FROM $745</span>
+                      <span className="font-mono text-xs text-electric-blue">MAX 15 STUDENTS · ONLY 3 SEATS LEFT</span>
                     </div>
                   </div>
                 </FadeIn>
@@ -242,33 +242,33 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* ── Founding Cohort Offer ── */}
+        {/* ── Course Availability ── */}
         <section className="py-20 px-6 md:px-12 bg-surface border-b border-outline-variant/10">
           <div className="max-w-7xl mx-auto">
             <FadeIn>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
                   <div>
-                    <span className="font-mono text-xs font-bold text-terminal-green uppercase tracking-widest block mb-3">Founding Cohort Offer</span>
+                    <span className="font-mono text-xs font-bold text-terminal-green uppercase tracking-widest block mb-3">Course Availability</span>
                     <h2 className="font-display font-bold text-4xl md:text-5xl leading-tight">
-                      First Five Students<br /><span className="text-terminal-green">Pay Half Price</span>
+                      Only 3 Seats<br /><span className="text-terminal-green">Left!</span>
                     </h2>
                   </div>
                   <p className="text-foreground/70 text-lg leading-relaxed">
-                    The first five students to secure their place will receive 50% off the standard course price. This offer is limited to the first five completed enrolments.
+                    The first five places have now been filled. Only 3 seats remain for this course.
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center gap-4">
                       <span className="font-mono text-xs text-foreground/50 w-32 shrink-0">Standard price</span>
-                      <span className="font-display font-bold text-xl text-foreground/50 line-through">$1,490 AUD</span>
+                      <span className="font-display font-bold text-xl text-foreground">$1,490 AUD</span>
                     </li>
                     <li className="flex items-center gap-4">
-                      <span className="font-mono text-xs text-terminal-green font-bold w-32 shrink-0">First five only</span>
-                      <span className="font-display font-bold text-3xl text-terminal-green">$745 AUD</span>
+                      <span className="font-mono text-xs text-terminal-green font-bold w-32 shrink-0">Places remaining</span>
+                      <span className="font-display font-bold text-3xl text-terminal-green">3 seats</span>
                     </li>
                   </ul>
                   <p className="font-mono text-xs text-foreground/50">
-                    The 50% offer applies to the first five completed enrolments. Submitting an enquiry does not secure the discounted price.
+                    Secure your place now before the remaining seats are filled.
                   </p>
                   <a href="#register" className="inline-block bg-terminal-green text-surface-lowest px-8 py-4 font-mono text-sm font-bold uppercase tracking-wider transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,255,65,0.2)]">
                     SECURE YOUR PLACE
@@ -705,8 +705,8 @@ export default function LandingPage() {
                 </div>
                 <div className="hidden sm:block w-px h-12 bg-outline-variant/30" />
                 <div className="text-left">
-                  <div className="font-mono text-xs font-bold text-terminal-green uppercase tracking-widest mb-1">First Five Students</div>
-                  <div className="font-display font-bold text-3xl text-terminal-green">$745 AUD</div>
+                  <div className="font-mono text-xs font-bold text-terminal-green uppercase tracking-widest mb-1">Places Remaining</div>
+                  <div className="font-display font-bold text-3xl text-terminal-green">3 seats</div>
                 </div>
               </div>
             </div>
@@ -718,7 +718,7 @@ export default function LandingPage() {
               <div className="text-center mb-10">
                 <h3 className="font-display font-bold text-2xl mb-4">Secure Your Place</h3>
                 <p className="text-foreground/70 leading-relaxed text-sm">
-                  First intake starts Tuesday 1 September 2026. Maximum 15 participants to ensure 1-on-1 lab support. The first five completed enrolments receive 50% off, standard price $1,490, founding cohort price $745.
+                  First intake starts Tuesday 1 September 2026. Maximum 15 participants to ensure 1-on-1 lab support. Only 3 seats remain at the standard price of $1,490.
                 </p>
               </div>
 
@@ -741,7 +741,7 @@ export default function LandingPage() {
               </noscript>
 
               <p className="text-center font-mono text-[10px] text-outline-variant uppercase pt-8">
-                The 50% offer is limited to the first five completed enrolments
+                Only 3 seats left!
               </p>
             </div>
           </FadeIn>

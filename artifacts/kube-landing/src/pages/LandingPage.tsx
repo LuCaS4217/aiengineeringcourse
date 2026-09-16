@@ -49,11 +49,11 @@ const StaggerItem = ({ children, className = "" }: { children: React.ReactNode, 
 );
 
 const SCHEDULE = [
-  { week: 'WEEK 01', dates: '1 & 3 September 2026',  days: ['Tue 1 Sept', 'Thu 3 Sept'] },
-  { week: 'WEEK 02', dates: '8 & 10 September 2026', days: ['Tue 8 Sept', 'Thu 10 Sept'] },
-  { week: 'WEEK 03', dates: '15 & 17 September 2026',days: ['Tue 15 Sept', 'Thu 17 Sept'] },
-  { week: 'WEEK 04', dates: '22 & 24 September 2026',days: ['Tue 22 Sept', 'Thu 24 Sept'] },
-  { week: 'WEEK 05', dates: '29 Sept & 1 Oct 2026',  days: ['Tue 29 Sept', 'Thu 1 Oct'] },
+  { week: 'WEEK 01', dates: 'Foundations', days: ['Class 01', 'Class 02'] },
+  { week: 'WEEK 02', dates: 'Agent systems', days: ['Class 03', 'Class 04'] },
+  { week: 'WEEK 03', dates: 'Specifications', days: ['Class 05', 'Class 06'] },
+  { week: 'WEEK 04', dates: 'Engineering loops', days: ['Class 07', 'Class 08'] },
+  { week: 'WEEK 05', dates: 'Build and present', days: ['Class 09', 'Class 10'] },
 ];
 
 export default function LandingPage() {
@@ -99,7 +99,7 @@ export default function LandingPage() {
       {/* Header */}
       <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background/90 backdrop-blur-md border-b border-outline-variant/30 py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-          <a href="#top" className="flex items-center gap-3">
+          <a href="https://www.kubecollege.edu.au/" className="flex items-center gap-3" aria-label="Visit the Kube College website">
             <img src={logoWhite} alt="Kube College" className="h-8 md:h-9 w-auto" />
             <span className="hidden lg:inline font-mono text-sm font-bold text-electric-blue uppercase tracking-widest border-l border-outline-variant/50 pl-3">AI Engineer</span>
           </a>
@@ -109,7 +109,7 @@ export default function LandingPage() {
             <a className="text-foreground/80 hover:text-electric-blue transition-colors duration-200" href="#trainers">Trainers</a>
           </nav>
           <a href="#register" className="bg-electric-blue text-white px-6 py-2 rounded font-mono text-xs font-bold uppercase active:scale-95 transition-all hover:brightness-110">
-            Secure Your Place
+            Register Your Interest
           </a>
         </div>
       </header>
@@ -119,7 +119,9 @@ export default function LandingPage() {
         <section id="top" className="relative min-h-[100dvh] flex flex-col items-center justify-center text-center px-6 md:px-12 overflow-hidden hero-gradient technical-grid-bg pt-20">
           <FadeIn>
             <div className="z-10 max-w-4xl mx-auto space-y-8">
-              <img src={iconWhite} alt="Kube College icon" className="h-14 w-auto mx-auto opacity-90" />
+              <a href="https://www.kubecollege.edu.au/" aria-label="Visit the Kube College website" className="inline-block">
+                <img src={iconWhite} alt="Kube College icon" className="h-14 w-auto mx-auto opacity-90" />
+              </a>
 
               <div className="inline-block border border-electric-blue/30 bg-electric-blue/5 px-4 py-1.5 rounded">
                 <span className="font-mono text-xs font-bold text-electric-blue tracking-widest uppercase">FACE TO FACE AI ENGINEERING COURSE</span>
@@ -136,10 +138,10 @@ export default function LandingPage() {
 
               {/* Course info bullets */}
               <ul className="text-left inline-flex flex-col gap-3 text-base text-foreground/80 pt-2">
-                <li className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-terminal-green shrink-0" /> 1 September to 1 October 2026</li>
+                <li className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-terminal-green shrink-0" /> Next face to face cohort coming soon</li>
                 <li className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-terminal-green shrink-0" /> Face to face at Kube College on the Gold Coast</li>
                 <li className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-terminal-green shrink-0" /> Maximum 15 students</li>
-                <li className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-terminal-green shrink-0" /> Final public project showcase at the biggest AI event, AI Horizons, with 100+ attendees expected, 8 October 2026</li>
+                <li className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-terminal-green shrink-0" /> Build a working AI project and prepare it for a public showcase</li>
               </ul>
 
               {/* Availability callout */}
@@ -151,20 +153,20 @@ export default function LandingPage() {
                 </div>
                 <div className="hidden sm:block w-px h-12 bg-outline-variant/30" />
                 <div className="font-mono text-xs text-terminal-green font-bold uppercase tracking-wider text-center">
-                  Only 3 seats<br />left!
+                  Interest<br />now open
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <a className="bg-terminal-green text-surface-lowest px-10 py-4 font-mono text-sm font-bold uppercase tracking-wider transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,255,65,0.2)]" href="#register">
-                  SECURE YOUR PLACE
+                  REGISTER YOUR INTEREST
                 </a>
                 <a className="border border-outline px-10 py-4 font-mono text-sm font-bold uppercase tracking-wider transition-all hover:border-electric-blue hover:text-electric-blue active:scale-95" href="#schedule">
                   VIEW THE COURSE SCHEDULE
                 </a>
               </div>
 
-              <p className="font-mono text-xs text-terminal-green/70 pt-2">// Only 3 seats left!</p>
+              <p className="font-mono text-xs text-terminal-green/70 pt-2">// Get priority access when enrolment opens</p>
             </div>
           </FadeIn>
 
@@ -183,7 +185,7 @@ export default function LandingPage() {
               </div>
               <div className="flex flex-col items-center md:items-start lg:pl-6">
                 <span className="font-mono text-[10px] font-bold text-electric-blue mb-1 uppercase tracking-widest">Dates</span>
-                <span className="font-mono text-sm text-foreground leading-snug">1 Sept – 1 Oct 2026</span>
+                <span className="font-mono text-sm text-foreground leading-snug">Announced soon</span>
               </div>
               <div className="flex flex-col items-center md:items-start lg:pl-6">
                 <span className="font-mono text-[10px] font-bold text-electric-blue mb-1 uppercase tracking-widest">Classes</span>
@@ -203,7 +205,7 @@ export default function LandingPage() {
               </div>
               <div className="flex flex-col items-center md:items-start lg:pl-6">
                 <span className="font-mono text-[10px] font-bold text-terminal-green mb-1 uppercase tracking-widest">Availability</span>
-                <span className="font-mono text-sm text-terminal-green font-bold leading-snug">Only 3 seats left!</span>
+                <span className="font-mono text-sm text-terminal-green font-bold leading-snug">Register interest</span>
               </div>
             </div>
           </FadeIn>
@@ -230,10 +232,10 @@ export default function LandingPage() {
                       You will not finish the course with only a certificate. You will finish with a working AI project, a public presentation and a stronger professional portfolio.
                     </blockquote>
                     <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
-                      Five weeks of face to face classes, guided engineering labs and practical project development on the Gold Coast, concluding with a public showcase at AI Horizons on 8 October 2026.
+                      Five weeks of face to face classes, guided engineering labs and practical project development on the Gold Coast, designed around a working AI project and public presentation.
                     </p>
                     <div className="flex items-center gap-4 pt-2">
-                      <span className="font-mono text-xs text-electric-blue">MAX 15 STUDENTS · ONLY 3 SEATS LEFT</span>
+                      <span className="font-mono text-xs text-electric-blue">MAX 15 STUDENTS · NEXT COHORT COMING SOON</span>
                     </div>
                   </div>
                 </FadeIn>
@@ -242,36 +244,40 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* ── Course Availability ── */}
+        {/* ── Next Cohort Interest ── */}
         <section className="py-20 px-6 md:px-12 bg-surface border-b border-outline-variant/10">
           <div className="max-w-7xl mx-auto">
             <FadeIn>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
                   <div>
-                    <span className="font-mono text-xs font-bold text-terminal-green uppercase tracking-widest block mb-3">Course Availability</span>
+                    <span className="font-mono text-xs font-bold text-terminal-green uppercase tracking-widest block mb-3">Next Cohort</span>
                     <h2 className="font-display font-bold text-4xl md:text-5xl leading-tight">
-                      Only 3 Seats<br /><span className="text-terminal-green">Left!</span>
+                      Be First to Hear<br /><span className="text-terminal-green">When Enrolment Opens.</span>
                     </h2>
                   </div>
                   <p className="text-foreground/70 text-lg leading-relaxed">
-                    The first five places have now been filled. Only 3 seats remain for this course.
+                    The current cohort is underway. Register your interest to receive the next course dates, enrolment details and priority access before public registration opens.
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center gap-4">
-                      <span className="font-mono text-xs text-foreground/50 w-32 shrink-0">Standard price</span>
+                      <span className="font-mono text-xs text-foreground/50 w-32 shrink-0">Course price</span>
                       <span className="font-display font-bold text-xl text-foreground">$1,490 AUD</span>
                     </li>
                     <li className="flex items-center gap-4">
-                      <span className="font-mono text-xs text-terminal-green font-bold w-32 shrink-0">Places remaining</span>
-                      <span className="font-display font-bold text-3xl text-terminal-green">3 seats</span>
+                      <span className="font-mono text-xs text-foreground/50 w-32 shrink-0">Next intake</span>
+                      <span className="font-display font-bold text-xl text-foreground">Coming soon</span>
+                    </li>
+                    <li className="flex items-center gap-4">
+                      <span className="font-mono text-xs text-terminal-green font-bold w-32 shrink-0">Interest list</span>
+                      <span className="font-display font-bold text-3xl text-terminal-green">Now open</span>
                     </li>
                   </ul>
                   <p className="font-mono text-xs text-foreground/50">
-                    Secure your place now before the remaining seats are filled.
+                    No commitment required. We will contact you when dates and enrolment details are confirmed.
                   </p>
                   <a href="#register" className="inline-block bg-terminal-green text-surface-lowest px-8 py-4 font-mono text-sm font-bold uppercase tracking-wider transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,255,65,0.2)]">
-                    SECURE YOUR PLACE
+                    REGISTER YOUR INTEREST
                   </a>
                 </div>
 
@@ -289,7 +295,7 @@ export default function LandingPage() {
                           'Small classes, maximum 15 students',
                           'Guided AI Engineering labs',
                           'Practical project development',
-                          'Public final presentation at AI Horizons',
+                          'Public final project presentation',
                         ].map(item => (
                           <li key={item} className="flex items-start gap-4">
                             <CheckCircle className="w-5 h-5 text-terminal-green shrink-0 mt-0.5" />
@@ -317,10 +323,10 @@ export default function LandingPage() {
               <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-l-4 border-electric-blue pl-6">
                 <div className="space-y-3">
                   <span className="font-mono text-xs font-bold text-electric-blue uppercase tracking-widest">Ten Face to Face Classes</span>
-                  <h2 className="font-display font-bold text-4xl md:text-5xl">Course Schedule</h2>
+                  <h2 className="font-display font-bold text-4xl md:text-5xl">Typical Five-Week Schedule</h2>
                 </div>
                 <div className="font-mono text-sm text-foreground/70 mt-6 md:mt-0">
-                  // TUESDAYS_AND_THURSDAYS · 18:00–21:00
+                  // NEXT_COHORT_DATES = COMING_SOON
                 </div>
               </div>
             </FadeIn>
@@ -351,7 +357,7 @@ export default function LandingPage() {
               <div className="mt-8 border border-electric-blue/20 bg-electric-blue/5 px-8 py-5 flex flex-col md:flex-row md:items-center gap-4 md:gap-12">
                 <div>
                   <span className="font-mono text-[10px] font-bold text-electric-blue uppercase tracking-widest block mb-1">Class Times</span>
-                  <span className="font-mono text-sm text-foreground">Tuesday &amp; Thursday evenings · 18:00 – 21:00</span>
+                  <span className="font-mono text-sm text-foreground">Two face to face classes each week</span>
                 </div>
                 <div className="hidden md:block w-px h-8 bg-outline-variant/30" />
                 <div>
@@ -600,7 +606,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* ── Final Milestone — AI Horizons ── */}
+        {/* ── Final Milestone — Project Showcase ── */}
         <section className="py-32 px-6 md:px-12 bg-surface-lowest border-b border-outline-variant/10" id="showcase">
           <div className="max-w-7xl mx-auto">
             <FadeIn>
@@ -610,12 +616,12 @@ export default function LandingPage() {
                   <div>
                     <span className="font-mono text-xs font-bold text-terminal-green uppercase tracking-widest block mb-4">Your Final Milestone</span>
                     <h2 className="font-display font-bold text-4xl md:text-5xl leading-tight">
-                      Present Your AI Project<br /><span className="text-terminal-green">at AI Horizons</span>
+                      Build Toward a<br /><span className="text-terminal-green">Public Project Showcase</span>
                     </h2>
                   </div>
 
                   <p className="text-foreground/70 text-lg leading-relaxed">
-                    The course concludes with the <strong className="text-foreground">AI Engineer Project Showcase at AI Horizons</strong> on Thursday, 8 October 2026, the biggest AI event on the Gold Coast, with 100+ attendees expected. Students will present the AI solutions they developed during the course to members of the Gold Coast technology, startup and business community.
+                    Every cohort works toward an <strong className="text-foreground">AI Engineer Project Showcase</strong>. Students present the AI solutions they developed during the course to members of the Gold Coast technology, startup and business community.
                   </p>
 
                   <blockquote className="border-l-4 border-terminal-green pl-6 font-display font-bold text-xl text-white leading-snug">
@@ -623,7 +629,7 @@ export default function LandingPage() {
                   </blockquote>
 
                   <p className="text-foreground/70 leading-relaxed">
-                    The AI Engineer Project Showcase will be presented as part of AI Horizons, Kube College's community event series connecting AI professionals, developers, founders, business leaders, students and members of the local technology community.
+                    The showcase connects students with AI professionals, developers, founders, business leaders and members of the local technology community.
                   </p>
 
                   <p className="text-foreground/70 leading-relaxed">
@@ -639,11 +645,11 @@ export default function LandingPage() {
                   <div className="space-y-6 mb-10">
                     <div>
                       <span className="font-mono text-[10px] font-bold text-terminal-green uppercase tracking-widest block mb-1">Event</span>
-                      <span className="font-display font-bold text-lg">AI Engineer Project Showcase at AI Horizons</span>
+                      <span className="font-display font-bold text-lg">AI Engineer Project Showcase</span>
                     </div>
                     <div>
                       <span className="font-mono text-[10px] font-bold text-terminal-green uppercase tracking-widest block mb-1">Date</span>
-                      <span className="font-mono text-lg">Thursday, 8 October 2026</span>
+                      <span className="font-mono text-lg">Announced with each cohort</span>
                     </div>
                     <div>
                       <span className="font-mono text-[10px] font-bold text-terminal-green uppercase tracking-widest block mb-1">Location</span>
@@ -695,7 +701,7 @@ export default function LandingPage() {
                 Join a small group of no more than 15 technical professionals for five weeks of face to face classes, guided engineering labs and practical project development on the Gold Coast.
               </p>
               <p className="text-foreground/70 leading-relaxed max-w-2xl mx-auto">
-                Build a working AI solution and present it publicly at the AI Engineer Project Showcase during AI Horizons on Thursday, 8 October 2026.
+                Build a working AI solution and prepare to present it at an AI Engineer Project Showcase for the local technology and business community.
               </p>
 
               <div className="inline-flex flex-col sm:flex-row items-center gap-6 border border-terminal-green/40 bg-terminal-green/5 px-8 py-5 rounded mx-auto">
@@ -705,8 +711,8 @@ export default function LandingPage() {
                 </div>
                 <div className="hidden sm:block w-px h-12 bg-outline-variant/30" />
                 <div className="text-left">
-                  <div className="font-mono text-xs font-bold text-terminal-green uppercase tracking-widest mb-1">Places Remaining</div>
-                  <div className="font-display font-bold text-3xl text-terminal-green">3 seats</div>
+                  <div className="font-mono text-xs font-bold text-terminal-green uppercase tracking-widest mb-1">Interest List</div>
+                  <div className="font-display font-bold text-3xl text-terminal-green">Now Open</div>
                 </div>
               </div>
             </div>
@@ -716,32 +722,32 @@ export default function LandingPage() {
               <div className="absolute bottom-0 right-0 w-10 h-10 border-b-2 border-r-2 border-electric-blue translate-x-0.5 translate-y-0.5" />
 
               <div className="text-center mb-10">
-                <h3 className="font-display font-bold text-2xl mb-4">Secure Your Place</h3>
+                <h3 className="font-display font-bold text-2xl mb-4">Register Your Interest</h3>
                 <p className="text-foreground/70 leading-relaxed text-sm">
-                  First intake starts Tuesday 1 September 2026. Maximum 15 participants to ensure 1-on-1 lab support. Only 3 seats remain at the standard price of $1,490.
+                  Join the priority list for the next face to face AI Engineer course at Kube College. We will contact you when dates and enrolment details are confirmed.
                 </p>
               </div>
 
               {/* Tally embed */}
-              <div className="min-h-[783px] w-full">
+              <div className="min-h-[500px] w-full">
                 <iframe
-                  data-tally-src="https://tally.so/embed/7Rz4aP?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1"
+                  data-tally-src="https://tally.so/embed/D4j8XE?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
                   loading="lazy"
                   width="100%"
-                  height="783"
+                  height="500"
                   frameBorder="0"
                   marginHeight={0}
                   marginWidth={0}
-                  title="Agentic AI Course"
+                  title="AI Engineering Course – Register Your Interest"
                 />
               </div>
 
               <noscript>
-                <a className="w-full block text-center bg-terminal-green text-surface-lowest py-5 font-mono text-sm font-bold uppercase tracking-widest hover:brightness-110 transition-all mt-8" href="https://tally.so/r/7Rz4aP">SECURE YOUR PLACE</a>
+                <a className="w-full block text-center bg-terminal-green text-surface-lowest py-5 font-mono text-sm font-bold uppercase tracking-widest hover:brightness-110 transition-all mt-8" href="https://tally.so/r/D4j8XE">REGISTER YOUR INTEREST</a>
               </noscript>
 
               <p className="text-center font-mono text-[10px] text-outline-variant uppercase pt-8">
-                Only 3 seats left!
+                Next cohort dates will be announced soon
               </p>
             </div>
           </FadeIn>
@@ -761,10 +767,12 @@ export default function LandingPage() {
       <footer className="bg-surface-lowest border-t border-outline-variant/10">
         <div className="w-full py-16 px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto">
           <div className="space-y-6">
-            <img src={logoWhite} alt="Kube College" className="h-10 w-auto" loading="lazy" />
+            <a href="https://www.kubecollege.edu.au/" aria-label="Visit the Kube College website">
+              <img src={logoWhite} alt="Kube College" className="h-10 w-auto" loading="lazy" />
+            </a>
             <div className="font-mono text-sm font-bold text-foreground">AI Engineer Course</div>
             <p className="text-foreground/60 max-w-sm leading-relaxed">
-              Face to face AI engineering training on the Gold Coast. Ten classes, maximum 15 students, real project work and a public final presentation at AI Horizons. 1 September – 1 October 2026.
+              Face to face AI engineering training on the Gold Coast. Ten classes, maximum 15 students, real project work and a public final presentation. Register your interest for the next cohort.
             </p>
           </div>
           <div className="flex flex-col md:items-end justify-between">

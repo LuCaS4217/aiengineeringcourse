@@ -35,6 +35,8 @@ node_modules
 npm-debug.log
 yarn-error.log
 testem.log
+vite-dev.log
+vite-dev-error.log
 /typings
 
 # System Files
